@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Sphero</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="skeleton.css">
+	<style type="text/css">
+		.connect {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+		}
+		.right {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<a class="connect button button-primary" href="#">Connect</a>
+	<h2>Morse Code</h2>
+
+	<div class="container">
+		<div class="row">
+			<div class="two columns">You: </div>
+			<div class="userId ten columns"></div>
+		</div>
+
+		<div class="row">
+			<div class="two columns">Message:</div>
+			<div class="message ten columns"></div>
+		</div>
+		<div class="row">
+			<div class="two columns">Decoded:</div>
+			<div class="decoded ten columns"></div>
+		</div>
+		<div class="row">
+			<div class="right six columns">
+				<a class="clear button button-primary" href="#">Clear</a>
+			</div>
+			<div class="six columns">
+				<a class="send button button-primary" href="#">Send</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="two columns">Them: </div>
+			<div class="otherUserId ten columns"></div>
+		</div>
+
+		<div class="row">
+			<div class="two columns">Message:</div>
+			<div class="othermessage ten columns"></div>
+		</div>
+		<div class="row">
+			<div class="two columns">Decoded:</div>
+			<div class="otherdecoded ten columns"></div>
+		</div>
+		<div class="row">
+			<div class="right six columns">
+				<a class="otherclear button button-primary" href="#">Clear</a>
+			</div>
+			<div class="six columns">
+				<a class="otherdecode button button-primary" href="#">Decode</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.7.min.js"></script>
+	<script src="morse-code.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

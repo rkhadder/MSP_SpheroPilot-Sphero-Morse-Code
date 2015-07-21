@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Sphero Morse Code</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="skeleton.css">
+	<style type="text/css">
+		.header {
+			width: 100%;
+			margin-top: 5%;
+			text-align: center;
+		}
+		.right {
+			text-align: right;
+		}
+		.center {
+			text-align: center;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Sphero Morse Code</h1>
+		<h4>Talk to your friends using sphero + morse code</h4>
+	</div>
+	<div class="container" style="margin-top: 5%;">
+		<div class="row">
+			<div class="right six columns">User ID: </div>
+			<div class="userId six columns">Waiting<span class="dots"></span></div>
+		</div>
+		<div class="row">
+			<div class="right six columns">Chat With: </div>
+			<div class="six columns"><input class="chatWith" type="text" maxlength="6"></div>
+		</div>
+		<div class="row center">
+			<a class="start button" href="index.html">Start!</a>
+		</div>
+	</div>
+
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.7.min.js"></script>
+	<script src="start.js"></script>
+</body>
+</html>
